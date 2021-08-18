@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace TrailsOfFate
 {
-    class RustySafeObject
+    public class RustySafeObject
     {
+        private string Name;
+        private string Description;
+        private ConsoleColor KeyColor;
+
+        public RustySafeObject(string name, string description, ConsoleColor keyColor) {
+
+            Name = name;
+            Description = description;
+            KeyColor = keyColor;
+        
+        }
+
     }
 }

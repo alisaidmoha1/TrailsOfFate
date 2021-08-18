@@ -17,5 +17,11 @@ namespace TrailsOfFate
             Name = name;
             Description = description;
         }
+
+        public void DisplayInfo()
+        {
+            Console.WriteLine($"You inspect the {Name}.");
+            Console.Write(Description);
+        }
     }
 }

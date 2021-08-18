@@ -6,7 +6,25 @@ using System.Threading.Tasks;
 
 namespace TrailsOfFate
 {
-    class Door
+   public class Door
     {
+        private string Key;
+        private string Code;
+
+        public Door (string key, string code)
+        {
+            Key = key;
+            Code = code;
+        }
+        public void FindKey(string key)
+        {
+          
+        }
+
+        public void AttemptCode()
+        {
+           
+        }
+
     }
 }
