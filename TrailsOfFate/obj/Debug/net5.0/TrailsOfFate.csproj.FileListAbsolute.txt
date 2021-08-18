@@ -1,0 +1,16 @@
+C:\Users\Saed\source\repos\EscapeGame\TrailsOfFate\bin\Debug\net5.0\TrailsOfFate.exe
+C:\Users\Saed\source\repos\EscapeGame\TrailsOfFate\bin\Debug\net5.0\TrailsOfFate.deps.json
+C:\Users\Saed\source\repos\EscapeGame\TrailsOfFate\bin\Debug\net5.0\TrailsOfFate.runtimeconfig.json
+C:\Users\Saed\source\repos\EscapeGame\TrailsOfFate\bin\Debug\net5.0\TrailsOfFate.runtimeconfig.dev.json
+C:\Users\Saed\source\repos\EscapeGame\TrailsOfFate\bin\Debug\net5.0\TrailsOfFate.dll
+C:\Users\Saed\source\repos\EscapeGame\TrailsOfFate\bin\Debug\net5.0\ref\TrailsOfFate.dll
+C:\Users\Saed\source\repos\EscapeGame\TrailsOfFate\bin\Debug\net5.0\TrailsOfFate.pdb
+C:\Users\Saed\source\repos\EscapeGame\TrailsOfFate\obj\Debug\net5.0\TrailsOfFate.csproj.AssemblyReference.cache
+C:\Users\Saed\source\repos\EscapeGame\TrailsOfFate\obj\Debug\net5.0\TrailsOfFate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Saed\source\repos\EscapeGame\TrailsOfFate\obj\Debug\net5.0\TrailsOfFate.AssemblyInfoInputs.cache
+C:\Users\Saed\source\repos\EscapeGame\TrailsOfFate\obj\Debug\net5.0\TrailsOfFate.AssemblyInfo.cs
+C:\Users\Saed\source\repos\EscapeGame\TrailsOfFate\obj\Debug\net5.0\TrailsOfFate.csproj.CoreCompileInputs.cache
+C:\Users\Saed\source\repos\EscapeGame\TrailsOfFate\obj\Debug\net5.0\TrailsOfFate.dll
+C:\Users\Saed\source\repos\EscapeGame\TrailsOfFate\obj\Debug\net5.0\ref\TrailsOfFate.dll
+C:\Users\Saed\source\repos\EscapeGame\TrailsOfFate\obj\Debug\net5.0\TrailsOfFate.pdb
+C:\Users\Saed\source\repos\EscapeGame\TrailsOfFate\obj\Debug\net5.0\TrailsOfFate.genruntimeconfig.cache
