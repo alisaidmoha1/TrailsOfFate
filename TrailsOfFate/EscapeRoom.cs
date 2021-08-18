@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static TrailsOfFate.Room;
 
 namespace TrailsOfFate
 {
-    class EscapeRoom
+    public class EscapeRoom
     {
-
+        
         public string Name;
         public string Description;
 
@@ -20,8 +21,10 @@ namespace TrailsOfFate
 
         public void DisplayInfo()
         {
-            Console.WriteLine($"You inspect the {Name}.");
+            Console.WriteLine($"You inspect the {Name}.\n");
             Console.Write(Description);
         }
+
+        
     }
 }

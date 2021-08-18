@@ -3,27 +3,46 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static TrailsOfFate.Room;
 
 namespace TrailsOfFate
 {
-   public class Door
+    public class Door
     {
-        private string Key;
-        private string Code;
+        //private string Key;
+        //private string Code
 
-        public Door (string key, string code)
+        public Keys Key { get; }
+
+        public Door(Keys key)
         {
             Key = key;
-            Code = code;
+            //Code = code;
         }
-        public void FindKey(string key)
+        public void FindKey()
         {
-          
+            Console.WriteLine("You are at the door. It's locked you need a key");
+            Console.WriteLine("Please enter a key");
+            int choice = int.Parse(Console.ReadLine());
+            Keys selectedKey = (Keys)choice;
+            if (selectedKey == Keys.BronzeKey)
+            {
+                Console.WriteLine("The door is unlocked you are free to go");
+            }
+           
+            else if (selectedKey != Keys.BronzeKey)
+            {
+                Console.WriteLine("the door is still locked try another key");
+            }
+         {
+
+            }
+
         }
 
         public void AttemptCode()
         {
-           
+
         }
 
     }

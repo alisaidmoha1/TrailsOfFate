@@ -6,7 +6,7 @@ namespace TrailsOfFate
     {
         static void Main(string[] args)
         { 
-                ProgramUI game = new ProgramUI();
+                Room game = new Room();
                 game.Start();
            
         }

@@ -10,14 +10,20 @@ namespace TrailsOfFate
     {
         private string Name;
         private string Description;
-        private ConsoleColor KeyColor;
+        
 
-        public RustySafeObject(string name, string description, ConsoleColor keyColor) {
+        public RustySafeObject(string name, string description) {
 
             Name = name;
             Description = description;
-            KeyColor = keyColor;
+            
         
+        }
+
+        public void DisplayKeyInfo()
+        {
+            Console.WriteLine(Name);
+            Console.WriteLine(Description);
         }
 
     }
