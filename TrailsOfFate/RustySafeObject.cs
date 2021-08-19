@@ -16,8 +16,6 @@ namespace TrailsOfFate
 
             Name = name;
             Description = description;
-            
-        
         }
 
         public void DisplayKeyInfo()
