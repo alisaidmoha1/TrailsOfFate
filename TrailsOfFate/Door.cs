@@ -11,12 +11,6 @@ namespace TrailsOfFate
     public class Door
     {
 
-        //Room game = new Room()
-        //    game.Start();
-       
-        //private string Key;
-        //private string Code
-
         public Keys Key { get; }
 
         public Door(Keys key)
@@ -54,27 +48,27 @@ namespace TrailsOfFate
                         break;
                     case Keys.GoldKey:
                         Console.WriteLine($"You have chosen the {Keys.GoldKey}!\n" +
-                            $"Behold! The GOLDEN KEY!");
+                            $"Behold! The GOLDEN KEY! YOU DIED!!");
                         ConsoleContinueMethod();
                         RestartTheGame();
                         break;
                     case Keys.SilverKey:
                         Console.WriteLine($"You have chosen the {Keys.SilverKey}!\n" +
-                            $"This key kills vampires and werewolves.");
+                            $"This key kills vampires and werewolves and YOU!.");
                         ConsoleContinueMethod();
                         RestartTheGame();
 
                         break;
                     case Keys.BronzeKey:
                         Console.WriteLine($"You have chosen the {Keys.BronzeKey}!\n" +
-                            $"You have escaped.. for now.");
+                            $"You have escaped.. for NOW.");
+                        Console.ReadKey();
                         isRunning = false;
                         
-                        Console.ReadKey(true);
                         break;
                     case Keys.WoodenKey:
                         Console.WriteLine($"You have chosen the {Keys.WoodenKey}!\n" +
-                            $"A simple wooden key. Stained. Dirty. Worthless.");
+                            $"A simple wooden key. Stained. Dirty. Worthless. Just like you");
                         ConsoleContinueMethod();
                         RestartTheGame();
                         break;

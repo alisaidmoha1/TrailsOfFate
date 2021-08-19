@@ -6,56 +6,36 @@ namespace TrailsOfFate
 {
     public class Program
     {
-        //static Timer timer = new Timer(1000);
-        //static int i = 0;
+
         public static void Main(string[] args)
-        { 
-                Room game = new Room();
-            //timer.Elapsed += timer_Elapsed;
-            //timer.Start(); 
+        {
+            Room game = new Room();
             Stopwatch stopwatch = new Stopwatch();
-            //Thread.Sleep(5000);
-            //stopwatch.ElapsedMilliseconds = 5000;
-            bool KeepRunning = true;
-                stopwatch.Start();
-            while (KeepRunning)
+            stopwatch.Start();
+            game.Start();
+            stopwatch.Stop();
+            if (stopwatch.Elapsed.TotalSeconds < 20)
             {
-                game.Start();
-                if (stopwatch.Elapsed.TotalMinutes <= 1)
-                {
-                    Console.WriteLine($"GAME OVER!!! Elapsed time is:{stopwatch.Elapsed.TotalMinutes}");
-                    KeepRunning = false;
-                    game.Start();
-                    break;
-
-                }
-                else
-                {
-                    KeepRunning = true;
-                    Console.WriteLine($"Elapsed time is:{stopwatch.Elapsed.TotalMinutes} minutes");
-                    Console.ReadKey();
-                }
-
-                    stopwatch.Stop();
-
+                Console.WriteLine($"That was fast, I did not expect that from you! It took you {stopwatch.Elapsed.TotalSeconds} seconds to finish the game.");
             }
+            else if (stopwatch.Elapsed.TotalSeconds >= 20 || stopwatch.Elapsed.TotalSeconds <= 40)
+            {
+                Console.WriteLine($"You did alright! It took you {stopwatch.Elapsed.TotalSeconds} seconds to finish the game.");
+            }
+            else
+            {
+                Console.WriteLine($" You are not smart, are you? It took you {stopwatch.Elapsed.TotalSeconds} seconds to finish the game.");
+            }
+            Console.WriteLine("Press any key to exit");
+            Console.ReadKey();
             
-
-
+            
+            }
+               
 
 
         }
 
-        //private static void timer_Elapsed (Object sender, ElapsedEventArgs e)
-        //{
-         //   i--;
-            //Console.Clear();
-            //Console.WriteLine("=================================================");
-            //Console.WriteLine("                  DEFUSE THE BOMB");
-            //Console.WriteLine("");
-            //Console.WriteLine("                Time Remaining:  " + i.ToString());
-            //Console.WriteLine("");
-            //Console.WriteLine("=================================================");
-        
-    }
+
+
 }

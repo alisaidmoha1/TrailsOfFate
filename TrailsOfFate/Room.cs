@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Pastel;
 using Figgle;
+using System.Diagnostics;
 
 namespace TrailsOfFate
 {
@@ -21,7 +22,7 @@ namespace TrailsOfFate
 
         public Room()
         {
-            WaxFigure = new EscapeRoom("Wax Figure", "You see a creepy wax figure -HINT=");
+            WaxFigure = new EscapeRoom("Wax Figure", "Its deceased owner of this house");
             BucketOfBlood = new EscapeRoom("Bucket of blood", "Unless you want drink it there is no use for it");
             ExitDoor = new Door(Keys.BronzeKey);
             SafeBox = new RustySafe("inheritance");
@@ -30,6 +31,9 @@ namespace TrailsOfFate
 
         public void Start()
         {
+
+
+
             Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.Title = "Trials of Fate";
             Console.WriteLine(FiggleFonts.SBlood.Render("     Welcome"));
@@ -50,7 +54,7 @@ namespace TrailsOfFate
                     "1. Bathroom\n" +
                     "2. North East Corner\n" +
                     "3. By the window");
-            
+
                 string input = Console.ReadLine();
                 Console.Clear();
                 switch (input)
@@ -74,14 +78,13 @@ namespace TrailsOfFate
                         break;
 
                     default:
+                        Console.WriteLine("Please enter a valid number");
                         break;
                 }
 
             }
-            Console.WriteLine("Press any key to exit the game...");
-            Console.ReadKey();
-        }
 
+        }
 
     }
 }
