@@ -30,3 +30,9 @@ C:\ElevenFiftyProjects\100SDGold\TrailsOfFate\TrailsOfFate\bin\Debug\net5.0\Trai
 C:\ElevenFiftyProjects\100SDGold\TrailsOfFate\TrailsOfFate\bin\Debug\net5.0\ref\TrailsOfFate.dll
 C:\ElevenFiftyProjects\100SDGold\TrailsOfFate\TrailsOfFate\bin\Debug\net5.0\TrailsOfFate.pdb
 C:\ElevenFiftyProjects\100SDGold\TrailsOfFate\TrailsOfFate\obj\Debug\net5.0\TrailsOfFate.genruntimeconfig.cache
+C:\Users\Saed\source\repos\EscapeGame\TrailsOfFate\bin\Debug\net5.0\Figgle.dll
+C:\Users\Saed\source\repos\EscapeGame\TrailsOfFate\bin\Debug\net5.0\Pastel.dll
+C:\Users\Saed\source\repos\EscapeGame\TrailsOfFate\obj\Debug\net5.0\TrailsOfFate.csproj.CopyComplete
+C:\ElevenFiftyProjects\100SDGold\TrailsOfFate\TrailsOfFate\bin\Debug\net5.0\Figgle.dll
+C:\ElevenFiftyProjects\100SDGold\TrailsOfFate\TrailsOfFate\bin\Debug\net5.0\Pastel.dll
+C:\ElevenFiftyProjects\100SDGold\TrailsOfFate\TrailsOfFate\obj\Debug\net5.0\TrailsOfFate.csproj.CopyComplete

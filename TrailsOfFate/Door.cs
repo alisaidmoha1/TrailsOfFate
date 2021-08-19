@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,10 @@ namespace TrailsOfFate
 {
     public class Door
     {
+
+        //Room game = new Room()
+        //    game.Start();
+       
         //private string Key;
         //private string Code
 
@@ -21,29 +26,77 @@ namespace TrailsOfFate
         }
         public void FindKey()
         {
-            Console.WriteLine("You are at the door. It's locked you need a key");
-            Console.WriteLine("Please enter a key");
-            int choice = int.Parse(Console.ReadLine());
-            Keys selectedKey = (Keys)choice;
-            if (selectedKey == Keys.BronzeKey)
+            bool isRunning = true;
+            while (isRunning)
             {
-                Console.WriteLine("The door is unlocked you are free to go");
-            }
-           
-            else if (selectedKey != Keys.BronzeKey)
-            {
-                Console.WriteLine("the door is still locked try another key");
-            }
-         {
+                Console.Clear();
+                Console.WriteLine("You have found 5 keys inside the rusty old safe. Choose wisely, and you just might make it out of here afterall\n\n");
+                Console.WriteLine("You are at the door. It's locked you need a key, Enter a key \n" +
+                                "1. Diamond Key\n" +
+                                "2. Gold Key\n" +
+                                "3. Silver Key\n" +
+                                "4. Bronze Key\n" +
+                                "5. Wooden Key");
+
+                int choice = int.Parse(Console.ReadLine().Trim());
+                Keys selectedKey = (Keys)choice;
+
+                Console.Clear();
+
+
+                switch (selectedKey)
+                {
+                    case Keys.DiamondKey:
+                        Console.WriteLine($"You have chosen the {Keys.DiamondKey}!\n" +
+                            $"This key is covered in diamonds.. it's almost irresistible.\n");
+                        ConsoleContinueMethod();
+                        RestartTheGame();
+                        break;
+                    case Keys.GoldKey:
+                        Console.WriteLine($"You have chosen the {Keys.GoldKey}!\n" +
+                            $"Behold! The GOLDEN KEY!");
+                        ConsoleContinueMethod();
+                        RestartTheGame();
+                        break;
+                    case Keys.SilverKey:
+                        Console.WriteLine($"You have chosen the {Keys.SilverKey}!\n" +
+                            $"This key kills vampires and werewolves.");
+                        ConsoleContinueMethod();
+                        RestartTheGame();
+
+                        break;
+                    case Keys.BronzeKey:
+                        Console.WriteLine($"You have chosen the {Keys.BronzeKey}!\n" +
+                            $"You have escaped.. for now.");
+                        isRunning = false;
+                        
+                        Console.ReadKey(true);
+                        break;
+                    case Keys.WoodenKey:
+                        Console.WriteLine($"You have chosen the {Keys.WoodenKey}!\n" +
+                            $"A simple wooden key. Stained. Dirty. Worthless.");
+                        ConsoleContinueMethod();
+                        RestartTheGame();
+                        break;
+                }
+
+                
 
             }
 
         }
 
-        public void AttemptCode()
+        public void ConsoleContinueMethod()
         {
-
+            Console.WriteLine("\n\nPress any key to try again.\n\n");
+            Console.ReadKey();
+            Console.Clear();
         }
 
+        public void RestartTheGame()
+        {
+            Room newStart = new Room();
+            newStart.Start();
+        }
     }
 }
